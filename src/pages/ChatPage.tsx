@@ -14,7 +14,7 @@ import {
 } from "lucide-react";
 import io from "socket.io-client";
 
-const socket = io("http://localhost:4000", {
+const socket = io("https://chat-backend-ug0t.onrender.com", {
   autoConnect: true,
   reconnection: true,
   reconnectionDelay: 1000,
@@ -85,7 +85,7 @@ export default function ChatPage() {
   // Cargar espacios desde la API
   const loadSpaces = async () => {
     try {
-      const response = await fetch("http://localhost:4000/api/spaces");
+      const response = await fetch("https://chat-backend-ug0t.onrender.com/api/spaces");
       const data = await response.json();
       setSpaces(data);
       console.log("📂 Espacios cargados:", data.length);
@@ -299,7 +299,7 @@ export default function ChatPage() {
     if (!newSpaceName.trim()) return;
 
     try {
-      const response = await fetch("http://localhost:4000/api/spaces", {
+      const response = await fetch("https://chat-backend-ug0t.onrender.com/api/spaces", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
