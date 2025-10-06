@@ -13,6 +13,7 @@ import {
   ArrowLeft,
 } from "lucide-react";
 import io from "socket.io-client";
+import EmojiPicker from "emoji-picker-react";
 
 const socket = io("https://chat-backend-ug0t.onrender.com", {
   autoConnect: true,
@@ -69,6 +70,7 @@ export default function ChatPage() {
   const [selectedImage, setSelectedImage] = useState<File | null>(null);
   const [imagePreview, setImagePreview] = useState<string>("");
   const [unreadDMs, setUnreadDMs] = useState<Record<string, boolean>>({});
+  const [showEmojiPicker, setShowEmojiPicker] = useState(false);
 
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const fileInputRef = useRef<HTMLInputElement>(null);
@@ -85,7 +87,9 @@ export default function ChatPage() {
   // Cargar espacios desde la API
   const loadSpaces = async () => {
     try {
-      const response = await fetch("https://chat-backend-ug0t.onrender.com/api/spaces");
+      const response = await fetch(
+        "https://chat-backend-ug0t.onrender.com/api/spaces"
+      );
       const data = await response.json();
       setSpaces(data);
       console.log("📂 Espacios cargados:", data.length);
@@ -299,15 +303,18 @@ export default function ChatPage() {
     if (!newSpaceName.trim()) return;
 
     try {
-      const response = await fetch("https://chat-backend-ug0t.onrender.com/api/spaces", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          name: newSpaceName.trim(),
-          description: newSpaceDesc.trim(),
-          createdBy: nickname,
-        }),
-      });
+      const response = await fetch(
+        "https://chat-backend-ug0t.onrender.com/api/spaces",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            name: newSpaceName.trim(),
+            description: newSpaceDesc.trim(),
+            createdBy: nickname,
+          }),
+        }
+      );
 
       if (response.ok) {
         const newSpace = await response.json();
@@ -728,6 +735,7 @@ export default function ChatPage() {
             >
               <ImageIcon size={20} className="text-gray-500" />
             </button>
+
             <input
               value={text}
               onChange={(e) => setText(e.target.value)}
@@ -739,6 +747,7 @@ export default function ChatPage() {
               }
               className="flex-1 px-4 py-3 bg-gray-100 rounded-full text-sm focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:bg-white transition"
             />
+
             <button
               onClick={send}
               disabled={!text.trim() && !selectedImage}
