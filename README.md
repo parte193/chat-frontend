@@ -8,5 +8,7 @@ Se pueden crear grupos con los nombres necesarios para la buena comunicación co
 
 Se guarda en base de datos mongo Atlas en el cual se guarda tanto los grupos como los mensajes directos con su historial separados.
 
+<img width="1354" height="622" alt="{5D47DE35-01E6-4B98-850B-1480DB80C1F0}" src="https://github.com/user-attachments/assets/614e982e-d0c3-4757-9ff8-0eb91460ff6a" />
 
+<img width="1348" height="675" alt="{A9393130-2CB1-4BF4-9DE0-FB2FEEB70980}" src="https://github.com/user-attachments/assets/d6f5f557-8223-4bab-bf78-ee1959df60fa" />
 
