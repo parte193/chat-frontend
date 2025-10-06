@@ -18,5 +18,8 @@ Se pueden enviar imagenes en el chat con un mensaje
 
 <img width="1328" height="668" alt="{6A06D0AC-CAB2-4068-89CB-428E74B6C75F}" src="https://github.com/user-attachments/assets/6e4ba7dd-1766-409c-aaeb-e5ca984c8733" />
 
+Modal de creación de espacios
 
+<img width="1909" height="981" alt="{3F73261D-497D-4F3C-89B2-21DE9271177F}" src="https://github.com/user-attachments/assets/74acfb54-0384-4821-b665-efebb8bd9543" />
 
+<img width="1904" height="937" alt="{F1B72C6B-2F10-4550-9285-5B3A6609C4F3}" src="https://github.com/user-attachments/assets/1ba24373-1d82-49ce-bc87-6c9e0117189f" />
