@@ -1,16 +1,12 @@
-# React + Vite
+Chat en Tiempo Real SDH Inc. responsivo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<img width="1351" height="629" alt="{C853A032-4BCD-429E-B760-ADE38435DC08}" src="https://github.com/user-attachments/assets/204e3408-2f14-4165-8624-a10612252f33" />
 
-Currently, two official plugins are available:
+Se encuentra desplegado en la URL: https://chat-frontend-sandy-three.vercel.app/ en la cual se puede loguear con un Alias/ NickName
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Se pueden crear grupos con los nombres necesarios para la buena comunicación como desarrollo, soporte técnico,ventas y marketing
 
-## React Compiler
+Se guarda en base de datos mongo Atlas en el cual se guarda tanto los grupos como los mensajes directos con su historial separados.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
