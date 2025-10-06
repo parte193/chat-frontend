@@ -12,3 +12,11 @@ Se guarda en base de datos mongo Atlas en el cual se guarda tanto los grupos com
 
 <img width="1348" height="675" alt="{A9393130-2CB1-4BF4-9DE0-FB2FEEB70980}" src="https://github.com/user-attachments/assets/d6f5f557-8223-4bab-bf78-ee1959df60fa" />
 
+Se pueden enviar imagenes en el chat con un mensaje
+
+<img width="1912" height="987" alt="{0DA36BD8-8953-44BF-9BCE-88C39201E47A}" src="https://github.com/user-attachments/assets/cc59331e-0e26-4d3e-926b-135081500861" />
+
+<img width="1328" height="668" alt="{6A06D0AC-CAB2-4068-89CB-428E74B6C75F}" src="https://github.com/user-attachments/assets/6e4ba7dd-1766-409c-aaeb-e5ca984c8733" />
+
+
+
