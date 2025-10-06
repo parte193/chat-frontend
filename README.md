@@ -4,6 +4,9 @@ Frontend desplegado en Vercel : https://vercel.com/
 
 Backend desplegado en render.com:  https://render.com/
 
+Base de datos Mongo Atlas:  https://www.mongodb.com/products/platform/atlas-database
+
+
 <img width="1351" height="629" alt="{C853A032-4BCD-429E-B760-ADE38435DC08}" src="https://github.com/user-attachments/assets/204e3408-2f14-4165-8624-a10612252f33" />
 
 Se encuentra desplegado en la URL: https://chat-frontend-sandy-three.vercel.app/ en la cual se puede loguear con un Alias/ NickName
