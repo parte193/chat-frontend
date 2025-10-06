@@ -23,3 +23,8 @@ Modal de creación de espacios
 <img width="1909" height="981" alt="{3F73261D-497D-4F3C-89B2-21DE9271177F}" src="https://github.com/user-attachments/assets/74acfb54-0384-4821-b665-efebb8bd9543" />
 
 <img width="1904" height="937" alt="{F1B72C6B-2F10-4550-9285-5B3A6609C4F3}" src="https://github.com/user-attachments/assets/1ba24373-1d82-49ce-bc87-6c9e0117189f" />
+
+Cuenta con banner de emoticones
+
+<img width="1908" height="944" alt="{2A6562BF-9DC4-4FC6-AEEC-9316F14C585E}" src="https://github.com/user-attachments/assets/130c0b4f-af12-4c39-9acb-1606391a7a69" />
+
