@@ -736,6 +736,14 @@ export default function ChatPage() {
               <ImageIcon size={20} className="text-gray-500" />
             </button>
 
+            <button
+              onClick={() => setShowEmojiPicker(!showEmojiPicker)}
+              className="p-3 hover:bg-gray-100 rounded-full transition"
+              title="Emojis"
+            >
+              😀
+            </button>
+
             <input
               value={text}
               onChange={(e) => setText(e.target.value)}
@@ -760,6 +768,16 @@ export default function ChatPage() {
               <Send size={20} />
             </button>
           </div>
+          {showEmojiPicker && (
+            <div className="absolute bottom-20 right-4 z-50">
+              <EmojiPicker
+                onEmojiClick={(emojiData) => {
+                  setText((prev) => prev + emojiData.emoji);
+                  setShowEmojiPicker(false);
+                }}
+              />
+            </div>
+          )}
         </div>
       </div>
     </div>
