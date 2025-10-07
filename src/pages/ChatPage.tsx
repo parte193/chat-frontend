@@ -206,7 +206,7 @@ export default function ChatPage() {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      fetch("https://chat-backend-ug0t.onrender.com/api/health").catch(
+      fetch("https://chat-backend-ug0t.onrender.com").catch(
         () => {}
       );
     }, 10000);
