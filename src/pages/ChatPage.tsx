@@ -191,6 +191,28 @@ export default function ChatPage() {
     };
   }, [navigate, nickname]);
 
+  useEffect(() => {
+    if (isConnected && !hasJoined && !isDM) {
+      const timeout = setTimeout(() => {
+        console.log(
+          `🚪 Uniéndose al espacio: ${currentSpace} como ${nickname}`
+        );
+        socket.emit("join", { nickname, space: currentSpace });
+        setHasJoined(true);
+      }, 500);
+      return () => clearTimeout(timeout);
+    }
+  }, [isConnected, hasJoined, currentSpace, nickname, isDM]);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      fetch("https://chat-backend-ug0t.onrender.com/api/health").catch(
+        () => {}
+      );
+    }, 60000);
+    return () => clearInterval(interval);
+  }, []);
+
   const handleNewMessage = (msg: any) => {
     const messageWithTimestamp = {
       ...msg,
