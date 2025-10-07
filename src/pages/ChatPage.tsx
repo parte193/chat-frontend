@@ -209,7 +209,7 @@ export default function ChatPage() {
       fetch("https://chat-backend-ug0t.onrender.com/api/health").catch(
         () => {}
       );
-    }, 60000);
+    }, 10000);
     return () => clearInterval(interval);
   }, []);
 
